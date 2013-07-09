@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_settings"
+        android:title="@string/menu_about"
+        android:orderInCategory="100" />
+    
+    <item android:id="@+id/menu_help"
+        android:title="@string/menu_help"
+        android:orderInCategory="200" />
+    
+    <item android:id="@+id/menu_publish"
+        android:title="@string/menu_publish"
+        android:orderInCategory="300" />
+    
+    <item android:id="@+id/menu_close"
+        android:title="@string/menu_close"
+        android:enabled="true"
+        android:orderInCategory="400" />
+</menu>

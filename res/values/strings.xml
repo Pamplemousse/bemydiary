@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="app_name">BeMyDiary</string>
+    <string name="hello_world"> </string>
+    <string name="hello_world2">MainMenuActivity</string>
+    <string name="menu_settings">Paramètres</string>
+    <string name="menu_about">A propos</string>
+    <string name="menu_help">Aide</string>
+    <string name="menu_publish">Publier le carnet</string>
+    <string name="menu_close">Fermer le carnet</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main_menu">MainMenuActivity</string>
+    <string name="title_activity_current_list">CurrentListActivity</string>
+    <string name="title_activity_carte">CarteActivity</string>
+    <string name="title_activity_media">MediaActivity</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="title_activity_old_list">OldListActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    
+    <color name="white">#FFFFFF</color>
+    <color name="green">#1BE02B</color>
+    <color name="transparentblack">#00000000</color>
+    <color name="black">#33000000</color>
+
+</resources>

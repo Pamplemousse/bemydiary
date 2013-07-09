@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!--
+     <com.google.android.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:apiKey="@string/api_key"
+        android:clickable="true"
+     />
+    -->
+
+
+    <!--
+           <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+		  android:id="@+id/map"
+		  android:layout_width="match_parent"
+		  android:layout_height="match_parent"
+		  class="com.google.android.gms.maps.SupportMapFragment"/>
+    -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/top_map_mon_chemin" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:gravity="center_horizontal" >
+
+                <Button
+                    android:id="@+id/mapPrevButton"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btn_prev" />
+
+                <Button
+                    android:id="@+id/mapMediasButton"
+                    android:layout_width="110dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btn_media" />
+
+                <Button
+                    android:id="@+id/mapNextButton"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/btn_next" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" >
+        </com.google.android.gms.maps.MapView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/retour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bt_liste" />
+
+</RelativeLayout>

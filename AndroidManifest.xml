@@ -1,0 +1,82 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lesgrosspoof.bemydiary"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="10" />
+    
+    <uses-feature
+	  android:glEsVersion="0x00020000"
+	  android:required="true"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	<uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+	<uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	
+    <application
+        android:name="com.lesgrosspoof.bemydiary.MyApp"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/app_theme"
+        android:allowBackup="true" >
+        
+        <uses-library android:name="com.google.android.maps" />
+        
+		<meta-data
+        android:name="com.google.android.maps.v2.API_KEY"
+        android:value="@string/maps_api_key" />
+        <activity
+            android:name="SplashScreenActivity"
+            android:label="BeMyDiary" 
+            android:noHistory="true">
+        </activity>
+        <activity
+            android:name="com.lesgrosspoof.bemydiary.MainMenuActivity"
+            android:label="BeMyDiary"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lesgrosspoof.bemydiary.CurrentListActivity"
+            android:label="@string/title_activity_current_list"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.lesgrosspoof.bemydiary.CarteActivity"
+            android:label="@string/title_activity_carte"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lesgrosspoof.bemydiary.MediaActivity"
+            android:label="@string/title_activity_media"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lesgrosspoof.bemydiary.HelpActivity"
+            android:label="@string/title_activity_help"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lesgrosspoof.bemydiary.OldListActivity"
+            android:label="@string/title_activity_old_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lesgrosspoof.bemydiary.SettingsActivity"
+			android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

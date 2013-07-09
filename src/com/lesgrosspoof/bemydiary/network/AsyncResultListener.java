@@ -1,0 +1,1 @@
+package com.lesgrosspoof.bemydiary.network;public interface AsyncResultListener {	public void callback(String result, int type);}

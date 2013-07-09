@@ -1,0 +1,7 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/wheelanim" android:oneshot="false">
+    <item android:drawable="@drawable/upload1" android:duration="80" />
+    <item android:drawable="@drawable/upload2" android:duration="80" />
+    <item android:drawable="@drawable/upload3" android:duration="80" />
+    <item android:drawable="@drawable/upload4" android:duration="80" />
+    <item android:drawable="@drawable/upload5" android:duration="80" />
+</animation-list>

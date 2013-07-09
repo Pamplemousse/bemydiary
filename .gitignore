@@ -1,0 +1,4 @@
+bin/
+gen/
+res/values/apikey.xml
+.DS_Store
